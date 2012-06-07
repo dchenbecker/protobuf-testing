@@ -1,0 +1,14 @@
+package test;
+
+option java_package = "com.precog.testing";
+option java_outer_classname = "HelloProto";
+
+message Hello {
+  required string greeting = 1;
+
+  message Person {
+    required string name = 1;
+  }
+
+  repeated Person people = 2;
+}
